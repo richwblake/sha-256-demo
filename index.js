@@ -16,7 +16,6 @@ const genChecksumForInput = async (msg) => {
 
 const hashToString = async (hash) => {
   const hashArr = Array.from(new Uint8Array(hash));
-  console.log(hashArr);
   return hashArr.join("");
 };
 
@@ -37,7 +36,6 @@ const listenForChangeMessage = () => {
 };
 
 const checkForMatch = () => {
-  console.log(originalMessageHash !== "" || changedMessageHash !== "");
   if (
     originalMessageHash.textContent === changedMessageHash.textContent &&
     (originalMessageHash.textContent !== "" ||
