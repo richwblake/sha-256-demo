@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SHA-256 Demo</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>SHA-256 Demo</h1>
+    <hr />
+    <div id="demo-container">
+      <div class="hash-container">
+        <h3>Original Message:</h3>
+        <textarea id="original-m-form-input"></textarea>
+        <p>Original Message Hash:</p>
+        <p id="original-msg-hash"></p>
+      </div>
+      <div class="hash-container">
+        <h3>Changed Message:</h3>
+        <textarea id="hashed-m-form-input"></textarea>
+        <p>Changed Message Hash:</p>
+        <p id="changed-msg-hash"></p>
+      </div>
+    </div>
+    <h2 id="match-notif" class="hidden">
+      <i><b>Checksums match!</b></i>
+    </h2>
+  </body>
+</html>
